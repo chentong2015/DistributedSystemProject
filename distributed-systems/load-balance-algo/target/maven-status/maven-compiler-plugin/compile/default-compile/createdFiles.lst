@@ -1,7 +1,0 @@
-model\RequestId.class
-round_robin\WeightRoundRobin.class
-hash\HashCircle.class
-round_robin\Weight.class
-model\ServerIP.class
-hash\HashConsistency.class
-random\WeightRandom.class

@@ -27,6 +27,7 @@
       <module name="database" target="15" />
       <module name="distributed-load-balancing" target="15" />
       <module name="distributed-search-index-engine" target="1.8" />
+      <module name="distributed-systems" target="16" />
       <module name="docker-kubernetes" target="15" />
       <module name="dubbo-rpc" target="15" />
       <module name="high-concurrency" target="15" />

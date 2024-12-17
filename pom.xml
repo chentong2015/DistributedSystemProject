@@ -11,8 +11,10 @@
     <version>1.0-SNAPSHOT</version>
 
     <modules>
+        <module>base-load-balancer</module>
         <module>caching-technology</module>
-        <module>distributed-systems</module>
+        <module>distributed-framework-zookeeper</module>
+        <module>distributed-transaction-seata</module>
         <module>remote-procedure-call</module>
     </modules>
 

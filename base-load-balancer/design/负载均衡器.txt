@@ -1,0 +1,8 @@
+
+TODO. 负载均衡器能够处理的traffic流量
+1. NGINX — An HTTP load balancer with SSL termination support.
+2. HAProxy — A TCP load balancer.
+3. Balance — Open-source TCP load balancer.
+4. mod_athena — Apache-based HTTP load balancer.
+5. Varnish — A reverse proxy-based load balancer.
+6. LVS — Linux virtual basic offering layer 4 load balancing.
