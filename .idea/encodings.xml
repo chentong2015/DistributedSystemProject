@@ -3,21 +3,22 @@
   <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$/../../Software System Architect/SoftwareSystemArchitect/system-design/src/main/java/interviews/caching_system/Web缓存设计.png" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/base-distributed-system/architect/高可用集群架构.png" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/base-distributed-system/replication/Redundancy and Replication.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/base-distributed-system/single_failure_replication/Redundancy and Replication.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/base-distributed-system/single_failure_replication/Redundancy and Replication.png" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/base-distributed-system/分布式系统.txt" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/base-distributed-system/集群系统设计.txt" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/caching-technology/design-caching-problems/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/caching-technology/design-caching-problems/src/main/java/org/caching/problem/CachingProblemsDemo.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/caching-technology/design-caching-problems/src/main/java/org/caching/problem/CachingProblemsOther.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/caching-technology/design-caching-problems/src/main/java/org/caching/problem/bloom_filter" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/caching-technology/design-caching-problems/src/main/java/org/caching/problem/bloom_filter/DistributedBloomFilter.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/caching-technology/design-caching-problems/src/main/java/org/caching/problem/framework/OrderService.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/caching-technology/design-caching-problems/src/main/java/org/caching/problem/model" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/caching-technology/design-caching-problems/src/main/java/org/caching/problem/缓存三大问题.txt" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/caching-technology/design-caching-problems/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/caching-technology/design-caching/缓存系统Design.txt" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/caching-technology/design-lru-cache/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/caching-technology/design-lru-cache/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/caching-technology/LRU-cache/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/caching-technology/LRU-cache/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/caching-technology/cache-system/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/caching-technology/cache-system/src/main/java/org/caching/problem/model" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/caching-technology/cache-system/src/main/java/org/caching/problem/缓存三大问题.txt" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/caching-technology/cache-system/src/main/java/problems/CachingProblemsDemo.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/caching-technology/cache-system/src/main/java/problems/CachingProblemsOther.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/caching-technology/cache-system/src/main/java/problems/bloom_filter" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/caching-technology/cache-system/src/main/java/problems/bloom_filter/DistributedBloomFilter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/caching-technology/cache-system/src/main/java/problems/framework/OrderService.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/caching-technology/cache-system/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/caching-technology/cache-system/src/main/缓存系统Core.txt" charset="GBK" />
     <file url="file://$PROJECT_DIR$/caching-technology/java-cache-manager/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/caching-technology/java-cache-manager/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/caching-technology/redis/src/main/java/Redis_Distributed_Lock/RedisDistributedLock.java" charset="GBK" />

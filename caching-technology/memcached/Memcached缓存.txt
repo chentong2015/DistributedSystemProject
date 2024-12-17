@@ -1,0 +1,8 @@
+分布式内存缓存系统
+Memcached is a distributed memory caching system
+designed for ease of use and simplicity and is well-suited as a cache or a session store.
+
+Memcached APIs:
+SECONDS = 1
+cache.set('myKey', 'hi there', 3600 * SECONDS)
+cache.get('myKey')

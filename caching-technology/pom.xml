@@ -13,8 +13,8 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>design-caching-problems</module>
-        <module>design-lru-cache</module>
+        <module>cache-system</module>
+        <module>LRU-cache</module>
         <module>ehcache</module>
     </modules>
 

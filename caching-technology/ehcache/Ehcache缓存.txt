@@ -1,5 +1,6 @@
-https://www.ehcache.org/documentation/3.10/getting-started.html
-
-Ehcache缓存技术
-1. 使用纯内存来存储缓存的数据
+Ehcache is a memory block storing serialized data objects.
+1. 使用纯内存来存储缓存
 2. 没有提供分布式缓存和集群的管理 ?
+3. 在Multilingual和Scalability上不如Redis
+
+https://www.ehcache.org/documentation/3.10/getting-started.html

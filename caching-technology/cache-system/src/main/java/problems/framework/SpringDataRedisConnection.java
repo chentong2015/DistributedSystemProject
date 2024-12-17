@@ -1,4 +1,4 @@
-package org.caching.problem.framework;
+package problems.framework;
 
 import org.springframework.data.redis.connection.RedisConnection;
 import org.springframework.data.redis.connection.RedisConnectionFactory;
