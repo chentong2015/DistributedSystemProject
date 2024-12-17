@@ -1,4 +1,3 @@
-
 TODO. 负载均衡器能够处理的traffic流量
 1. NGINX — An HTTP load balancer with SSL termination support.
 2. HAProxy — A TCP load balancer.
