@@ -1,8 +1,8 @@
 
-TODO. ¸ºÔØ¾ùºâÆ÷ÄÜ¹»´¦ÀíµÄtrafficÁ÷Á¿
-1. NGINX ¡ª An HTTP load balancer with SSL termination support.
-2. HAProxy ¡ª A TCP load balancer.
-3. Balance ¡ª Open-source TCP load balancer.
-4. mod_athena ¡ª Apache-based HTTP load balancer.
-5. Varnish ¡ª A reverse proxy-based load balancer.
-6. LVS ¡ª Linux virtual basic offering layer 4 load balancing.
+TODO. è´Ÿè½½å‡è¡¡å™¨èƒ½å¤Ÿå¤„ç†çš„trafficæµé‡
+1. NGINX â€” An HTTP load balancer with SSL termination support.
+2. HAProxy â€” A TCP load balancer.
+3. Balance â€” Open-source TCP load balancer.
+4. mod_athena â€” Apache-based HTTP load balancer.
+5. Varnish â€” A reverse proxy-based load balancer.
+6. LVS â€” Linux virtual basic offering layer 4 load balancing.
