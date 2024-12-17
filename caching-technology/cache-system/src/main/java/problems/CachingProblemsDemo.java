@@ -1,9 +1,8 @@
 package problems;
 
-import problems.bloom_filter.DistributedBloomFilter;
-import problems.framework.Order;
-import problems.framework.OrderService;
-import problems.framework.SpringDataRedisConnection;
+import bloom_filter.DistributedBloomFilter;
+import problems.model.Order;
+import problems.model.OrderService;
 import org.springframework.data.redis.core.StringRedisTemplate;
 
 import java.util.List;

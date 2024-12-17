@@ -1,7 +1,7 @@
-package org.example.lrucache;
+package eviction_policy;
 
-import org.example.lrucache.model.DoublyLinkedList;
-import org.example.lrucache.node.LinkedListNode;
+import eviction_policy.model.DoublyLinkedList;
+import eviction_policy.model.LinkedListNode;
 
 import java.util.Map;
 import java.util.Optional;

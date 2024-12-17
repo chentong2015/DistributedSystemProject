@@ -12,7 +12,6 @@
         <module name="dubbo-framework" />
         <module name="rpc-client" />
         <module name="rpc-server" />
-        <module name="LRU-cache" />
         <module name="distributed-framework-zookeeper" />
         <module name="load-balance-algo" />
       </profile>
@@ -37,6 +36,7 @@
       <module name="java-cache-manager" target="17" />
       <module name="jee-servlet-core" target="17" />
       <module name="load-balancer-nginx" target="8" />
+      <module name="LRU-cache" target="17" />
       <module name="message-middleware" target="15" />
       <module name="message-queue" target="15" />
       <module name="middleware" target="15" />

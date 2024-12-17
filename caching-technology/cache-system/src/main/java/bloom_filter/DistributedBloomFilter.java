@@ -1,6 +1,6 @@
-package problems.bloom_filter;
+package bloom_filter;
 
-import problems.framework.SpringDataRedisConnection;
+import problems.SpringDataRedisConnection;
 import org.springframework.dao.DataAccessException;
 import org.springframework.data.redis.connection.RedisConnection;
 import org.springframework.data.redis.core.RedisCallback;

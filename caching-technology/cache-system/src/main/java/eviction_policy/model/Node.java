@@ -1,6 +1,4 @@
-package org.example.lrucache.node;
-
-import org.example.lrucache.model.DoublyLinkedList;
+package eviction_policy.model;
 
 public class Node<T> implements LinkedListNode<T> {
 

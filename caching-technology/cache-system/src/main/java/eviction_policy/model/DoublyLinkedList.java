@@ -1,8 +1,4 @@
-package org.example.lrucache.model;
-
-import org.example.lrucache.node.DummyNode;
-import org.example.lrucache.node.LinkedListNode;
-import org.example.lrucache.node.Node;
+package eviction_policy.model;
 
 import java.util.Collection;
 import java.util.concurrent.atomic.AtomicInteger;

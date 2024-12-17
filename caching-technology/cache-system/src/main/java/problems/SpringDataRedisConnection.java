@@ -1,4 +1,4 @@
-package problems.framework;
+package problems;
 
 import org.springframework.data.redis.connection.RedisConnection;
 import org.springframework.data.redis.connection.RedisConnectionFactory;
@@ -21,6 +21,4 @@ public class SpringDataRedisConnection {
         RedisStandaloneConfiguration config = new RedisStandaloneConfiguration("8.209.74.47", 6379);
         return new JedisConnectionFactory(config);
     }
-
-
 }

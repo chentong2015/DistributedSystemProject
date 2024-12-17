@@ -1,4 +1,4 @@
-package problems.framework;
+package problems.model;
 
 public class Order {
 

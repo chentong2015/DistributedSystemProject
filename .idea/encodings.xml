@@ -10,13 +10,13 @@
     <file url="file://$PROJECT_DIR$/caching-technology/LRU-cache/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/caching-technology/LRU-cache/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/caching-technology/cache-system/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/caching-technology/cache-system/src/main/java/bloom_filter/DistributedBloomFilter.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/caching-technology/cache-system/src/main/java/org/caching/problem/model" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/caching-technology/cache-system/src/main/java/org/caching/problem/缓存三大问题.txt" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/caching-technology/cache-system/src/main/java/problems/CachingProblemsDemo.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/caching-technology/cache-system/src/main/java/problems/CachingProblemsOther.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/caching-technology/cache-system/src/main/java/problems/bloom_filter" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/caching-technology/cache-system/src/main/java/problems/bloom_filter/DistributedBloomFilter.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/caching-technology/cache-system/src/main/java/problems/framework/OrderService.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/caching-technology/cache-system/src/main/java/problems/model/OrderService.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/caching-technology/cache-system/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/caching-technology/cache-system/src/main/缓存系统Core.txt" charset="GBK" />
     <file url="file://$PROJECT_DIR$/caching-technology/java-cache-manager/src/main/java" charset="UTF-8" />

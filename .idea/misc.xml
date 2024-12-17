@@ -16,9 +16,12 @@
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/../../Java Master/JavaMasterApplications/networking-web-services/http-web-server/pom.xml" />
+        <option value="$PROJECT_DIR$/../../Java Master/JavaMasterApplications/networking-web-services/io-netty/pom.xml" />
         <option value="$PROJECT_DIR$/api-servlet-core/pom.xml" />
         <option value="$PROJECT_DIR$/architect-system-design/pom.xml" />
         <option value="$PROJECT_DIR$/big-data-processing-system/pom.xml" />
+        <option value="$PROJECT_DIR$/caching-technology/LRU-cache/pom.xml" />
         <option value="$PROJECT_DIR$/caching-technology/java-cache-manager/pom.xml" />
         <option value="$PROJECT_DIR$/container-docker-basic/pom.xml" />
         <option value="$PROJECT_DIR$/container-docker/pom.xml" />
@@ -41,11 +44,8 @@
         <option value="$PROJECT_DIR$/orm-hibernate/pom.xml" />
         <option value="$PROJECT_DIR$/redis-master/pom.xml" />
         <option value="$PROJECT_DIR$/serverless-framework/pom.xml" />
-        <option value="$PROJECT_DIR$/../../Java Master/JavaMasterApplications/networking-web-services/http-web-server/pom.xml" />
-        <option value="$PROJECT_DIR$/../../Java Master/JavaMasterApplications/networking-web-services/io-netty/pom.xml" />
       </set>
     </option>
-    <option name="workspaceImportForciblyTurnedOn" value="true" />
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_17" project-jdk-name="17" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />

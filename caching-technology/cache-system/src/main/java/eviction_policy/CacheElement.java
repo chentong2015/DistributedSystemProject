@@ -1,4 +1,4 @@
-package org.example.lrucache;
+package eviction_policy;
 
 // Cache 缓存中要存储的数据
 // <Key, Value> 使用键值来快速的查找，泛型支持不同的存储类型

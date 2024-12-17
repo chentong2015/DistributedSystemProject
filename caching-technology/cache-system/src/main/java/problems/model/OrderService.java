@@ -1,4 +1,4 @@
-package problems.framework;
+package problems.model;
 
 import java.util.ArrayList;
 import java.util.List;

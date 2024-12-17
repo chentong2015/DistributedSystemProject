@@ -1,4 +1,4 @@
-package org.example.lrucache;
+package eviction_policy;
 
 import java.util.Optional;
 
