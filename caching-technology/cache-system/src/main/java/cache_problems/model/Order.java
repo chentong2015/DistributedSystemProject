@@ -1,4 +1,4 @@
-package problems.model;
+package cache_problems.model;
 
 public class Order {
 

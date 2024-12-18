@@ -1,4 +1,4 @@
-package problems.model;
+package cache_problems.model;
 
 import java.util.ArrayList;
 import java.util.List;

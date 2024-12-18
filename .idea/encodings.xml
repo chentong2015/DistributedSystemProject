@@ -26,11 +26,11 @@
     <file url="file://$PROJECT_DIR$/caching-technology/LRU-cache/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/caching-technology/cache-system/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/caching-technology/cache-system/src/main/java/bloom_filter/DistributedBloomFilter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/caching-technology/cache-system/src/main/java/cache_problems/RedisCachingDemo.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/caching-technology/cache-system/src/main/java/cache_problems/bloom_filter" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/caching-technology/cache-system/src/main/java/cache_problems/model/OrderService.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/caching-technology/cache-system/src/main/java/org/caching/problem/model" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/caching-technology/cache-system/src/main/java/org/caching/problem/缓存三大问题.txt" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/caching-technology/cache-system/src/main/java/problems/RedisCachingDemo.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/caching-technology/cache-system/src/main/java/problems/bloom_filter" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/caching-technology/cache-system/src/main/java/problems/model/OrderService.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/caching-technology/cache-system/src/main/java/rest_controller/CachingRestController.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/caching-technology/cache-system/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/caching-technology/cache-system/src/main/缓存系统.txt" charset="GBK" />

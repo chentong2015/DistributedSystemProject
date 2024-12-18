@@ -1,7 +1,7 @@
-package problems;
+package cache_problems;
 
-import problems.model.Order;
-import problems.model.OrderService;
+import cache_problems.model.Order;
+import cache_problems.model.OrderService;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import rest_controller.SpringRedisHelper;
 

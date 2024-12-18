@@ -1,9 +1,9 @@
-package problems;
+package cache_problems;
 
 import bloom_filter.DistributedBloomFilter;
 import org.springframework.data.redis.core.StringRedisTemplate;
-import problems.model.Order;
-import problems.model.OrderService;
+import cache_problems.model.Order;
+import cache_problems.model.OrderService;
 import rest_controller.SpringRedisHelper;
 
 import java.util.List;
