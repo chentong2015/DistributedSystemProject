@@ -25,6 +25,8 @@
       <module name="container-serverless-framework" target="15" />
       <module name="container-severless-framework" target="15" />
       <module name="database" target="15" />
+      <module name="design-caching-problems" target="17" />
+      <module name="design-lru-cache" target="17" />
       <module name="distributed-load-balancing" target="15" />
       <module name="distributed-search-index-engine" target="1.8" />
       <module name="distributed-systems" target="16" />

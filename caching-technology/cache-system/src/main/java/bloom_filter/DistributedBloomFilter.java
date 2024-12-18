@@ -1,6 +1,6 @@
 package bloom_filter;
 
-import problems.SpringDataRedisConnection;
+import rest_controller.SpringRedisHelper;
 import org.springframework.dao.DataAccessException;
 import org.springframework.data.redis.connection.RedisConnection;
 import org.springframework.data.redis.core.RedisCallback;
@@ -10,8 +10,9 @@ import java.util.List;
 
 import static java.util.Objects.hash;
 
-// 自定义分布式布隆过滤器的实现：
 // TODO: 根据Redis底层数据值的存储(位数组)来实现，支撑位组2^32，约42亿
+//
+// 自定义分布式布隆过滤器的实现
 // > set tong abc
 // > get tong
 //   "abc"              --> 实际底层对应的二进制存储：1100001 1100010 1100011
@@ -40,7 +41,7 @@ public class DistributedBloomFilter {
         return Math.max(1, (int) Math.round((double) m / (double) n * Math.log(2.0D)));
     }
 
-    private StringRedisTemplate redisTemplate = SpringDataRedisConnection.getJedisStringTemplate();
+    private final StringRedisTemplate redisTemplate = SpringRedisHelper.getStringJedisTemplate();
 
     public void put(int id) {
         long[] indexs = getIndexs(String.valueOf(id));
