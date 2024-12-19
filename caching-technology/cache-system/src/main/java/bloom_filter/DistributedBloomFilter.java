@@ -1,6 +1,6 @@
 package bloom_filter;
 
-import rest_controller.SpringRedisHelper;
+import cache_problems.SpringRedisHelper;
 import org.springframework.dao.DataAccessException;
 import org.springframework.data.redis.connection.RedisConnection;
 import org.springframework.data.redis.core.RedisCallback;

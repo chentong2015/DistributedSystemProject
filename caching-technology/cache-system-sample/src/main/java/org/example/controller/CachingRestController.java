@@ -1,6 +1,7 @@
-package rest_controller;
+package org.example.controller;
 
 import jodd.util.StringUtil;
+import org.example.helper.SpringRedisHelper;
 import org.redisson.Redisson;
 import org.redisson.api.RLock;
 import org.redisson.api.RReadWriteLock;
@@ -19,8 +20,6 @@ public class CachingRestController {
     private final RReadWriteLock readWriteLock = redisson.getReadWriteLock(lockKey);
     private final StringRedisTemplate stringRedisTemplate = SpringRedisHelper.getStringJedisTemplate();
 
-    // 背后实现逻辑:
-    // set key -> mode(read), value 对于添加的锁设置一个读写的模式
     @RequestMapping("/getStock")
     public String getStock(@RequestParam("clientId") Long clientId) throws InterruptedException {
         RLock readLock = readWriteLock.readLock();

@@ -16,6 +16,7 @@
         <module>distributed-framework-zookeeper</module>
         <module>distributed-transaction-seata</module>
         <module>remote-procedure-call</module>
+        <module>caching-technology/cache-system-sample</module>
     </modules>
 
     <properties>

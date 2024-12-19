@@ -13,6 +13,7 @@
         <module name="rpc-client" />
         <module name="rpc-server" />
         <module name="distributed-framework-zookeeper" />
+        <module name="cache-system-sample" />
         <module name="load-balance-algo" />
       </profile>
     </annotationProcessing>

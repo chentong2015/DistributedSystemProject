@@ -4,7 +4,6 @@ import bloom_filter.DistributedBloomFilter;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import cache_problems.model.Order;
 import cache_problems.model.OrderService;
-import rest_controller.SpringRedisHelper;
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -37,8 +36,8 @@ public class RedisCachingMaster {
     }
 
     // TODO: 4. 分布式锁: 使用JVM级别的锁代替分布式锁来测试
+    private StringRedisTemplate redisTemplate;
     private Lock distributedLock = new ReentrantLock();
-    private StringRedisTemplate redisTemplate = SpringRedisHelper.getStringJedisTemplate();
 
     public String findOrder4(int id) {
         if (!bloomFilter.isExist(id)) {

@@ -3,13 +3,12 @@ package cache_problems;
 import cache_problems.model.Order;
 import cache_problems.model.OrderService;
 import org.springframework.data.redis.core.StringRedisTemplate;
-import rest_controller.SpringRedisHelper;
 
 import java.util.concurrent.TimeUnit;
 
 public class RedisCachingDemo {
 
-    private StringRedisTemplate redisTemplate = SpringRedisHelper.getStringJedisTemplate();
+    private StringRedisTemplate redisTemplate;
 
     // TODO. 1. 错误代码演示
     public String findOrder(int id) {

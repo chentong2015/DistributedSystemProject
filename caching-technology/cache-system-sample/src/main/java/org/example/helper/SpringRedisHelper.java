@@ -1,4 +1,4 @@
-package rest_controller;
+package org.example.helper;
 
 import org.springframework.data.redis.connection.RedisConnection;
 import org.springframework.data.redis.connection.RedisStandaloneConfiguration;
@@ -16,9 +16,11 @@ public class SpringRedisHelper {
         return connectionFactory.getConnection();
     }
 
+    // Must use start() to initialize it
     public static StringRedisTemplate getStringJedisTemplate() {
         RedisStandaloneConfiguration config = new RedisStandaloneConfiguration(HOST_NAME, PORT);
         JedisConnectionFactory connectionFactory = new JedisConnectionFactory(config);
+        connectionFactory.start();
         return new StringRedisTemplate(connectionFactory);
     }
 }
