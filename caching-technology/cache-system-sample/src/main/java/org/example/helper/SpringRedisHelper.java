@@ -16,7 +16,7 @@ public class SpringRedisHelper {
         return connectionFactory.getConnection();
     }
 
-    // Must use start() to initialize it
+    // Must use start() to initialize it 必须启动连接工厂
     public static StringRedisTemplate getStringJedisTemplate() {
         RedisStandaloneConfiguration config = new RedisStandaloneConfiguration(HOST_NAME, PORT);
         JedisConnectionFactory connectionFactory = new JedisConnectionFactory(config);

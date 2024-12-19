@@ -1,6 +1,5 @@
 package bloom_filter;
 
-import cache_problems.SpringRedisHelper;
 import org.springframework.dao.DataAccessException;
 import org.springframework.data.redis.connection.RedisConnection;
 import org.springframework.data.redis.core.RedisCallback;
@@ -41,7 +40,7 @@ public class DistributedBloomFilter {
         return Math.max(1, (int) Math.round((double) m / (double) n * Math.log(2.0D)));
     }
 
-    private final StringRedisTemplate redisTemplate = SpringRedisHelper.getStringJedisTemplate();
+    private StringRedisTemplate redisTemplate;
 
     public void put(int id) {
         long[] indexs = getIndexs(String.valueOf(id));
