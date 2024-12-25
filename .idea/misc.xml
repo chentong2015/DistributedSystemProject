@@ -22,6 +22,7 @@
         <option value="$PROJECT_DIR$/architect-system-design/pom.xml" />
         <option value="$PROJECT_DIR$/big-data-processing-system/pom.xml" />
         <option value="$PROJECT_DIR$/caching-technology/LRU-cache/pom.xml" />
+        <option value="$PROJECT_DIR$/caching-technology/cache-system-sample/pom.xml" />
         <option value="$PROJECT_DIR$/caching-technology/java-cache-manager/pom.xml" />
         <option value="$PROJECT_DIR$/container-docker-basic/pom.xml" />
         <option value="$PROJECT_DIR$/container-docker/pom.xml" />

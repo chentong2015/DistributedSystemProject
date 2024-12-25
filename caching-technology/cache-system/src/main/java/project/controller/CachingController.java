@@ -1,9 +1,9 @@
-package org.example.controller;
+package project.controller;
 
 import java.util.List;
 import java.util.Map;
 
-import org.example.helper.SpringRedisHelper;
+import project.helper.SpringRedisHelper;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

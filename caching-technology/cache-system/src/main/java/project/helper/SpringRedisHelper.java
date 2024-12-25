@@ -1,4 +1,4 @@
-package org.example.helper;
+package project.helper;
 
 import org.springframework.data.redis.connection.RedisConnection;
 import org.springframework.data.redis.connection.RedisStandaloneConfiguration;
