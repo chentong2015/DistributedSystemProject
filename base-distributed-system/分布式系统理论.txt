@@ -1,0 +1,39 @@
+- Scalability
+  可扩展性能满足不断增长的work需求，在没有系统损失情况下进行扩展
+  - Vertical Scaling 提高每个server的capacity
+  - Horizontal Scaling 添加更多的服务server到资源池
+
+- Availability
+  可用性指系统在特定时期内保持运行，以执行其所需功能的时间
+  - 如果系统是高可用性的，不一定代表高可靠性
+
+- Reliability
+  系统的可靠性，保证系统在数据和安全性上是可靠的
+  保证系统中的用户数据不会被丢失
+  - 如果系统是高可靠性的，则一定是高可用性的
+
+- Fault-Tolerance
+  系统必须具有宽错性，保证不会被挂掉的能力，通过提供副本(replica)来实现
+  冗余具有成本，可靠的系统必须付出代价才能消除单点故障(Single Point Failure)
+
+- High Consistent
+  分布式系统中不同节点的数据需要保证一致性(Share data between replicas)
+  通过“两阶段提交”来同步/拷贝数据到另一个节点，“写操作”由Leader节点来完成
+
+- High performance / High concurrency
+  搭建LB负载均衡 + Cache多级缓存 + Lock并发同步
+  通过搭建高可用的分布式集群来实现高性能和高并发
+
+- Serviceability / Manageability
+  可维护性和可操作性(修复性)
+
+- Security
+  考虑系统数据安全性，授权访问限制，限流器(Rate Limiter)
+  考虑Web Security网络安全相关的问题
+
+- Monitoring
+  监控系统的什么信息，监控系统的日志数据(Log格式)
+
+- Sustainable 系统的可持续性
+- Efficiency 有效性
+- Cost 花销成本
