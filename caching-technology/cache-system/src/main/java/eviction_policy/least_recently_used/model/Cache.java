@@ -1,4 +1,4 @@
-package eviction_policy.lru.model;
+package eviction_policy.least_recently_used.model;
 
 import java.util.Optional;
 

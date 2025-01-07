@@ -1,9 +1,9 @@
-package eviction_policy.lru;
+package eviction_policy.least_recently_used;
 
-import eviction_policy.lru.model.Cache;
-import eviction_policy.lru.model.CacheElement;
-import eviction_policy.lru.node.DoublyLinkedList;
-import eviction_policy.lru.node.LinkedListNode;
+import eviction_policy.least_recently_used.model.Cache;
+import eviction_policy.least_recently_used.model.CacheElement;
+import eviction_policy.least_recently_used.node.DoublyLinkedList;
+import eviction_policy.least_recently_used.node.LinkedListNode;
 
 import java.util.Map;
 import java.util.Optional;

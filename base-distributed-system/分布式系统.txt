@@ -28,7 +28,8 @@
   可维护性和可操作性(修复性)
 
 - Security
-  考虑系统数据安全性，授权访问限制，限流器(Rate Limiter)
+  添加Permission权限来授权并控制数据的安全访问
+  使用限流器(Rate Limiter)限制可疑的高并发请求
   考虑Web Security网络安全相关的问题
 
 - Monitoring

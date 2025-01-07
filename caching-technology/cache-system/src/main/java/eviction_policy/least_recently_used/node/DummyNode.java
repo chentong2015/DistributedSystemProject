@@ -1,4 +1,4 @@
-package eviction_policy.lru.node;
+package eviction_policy.least_recently_used.node;
 
 public class DummyNode<T> implements LinkedListNode<T> {
 
