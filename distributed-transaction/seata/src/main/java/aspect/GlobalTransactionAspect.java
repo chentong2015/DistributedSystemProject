@@ -1,15 +1,15 @@
-package com.seata.template.aspect;
+package aspect;
 
-import com.seata.template.model.GlobalTransaction;
-import com.seata.template.model.MyTransaction;
-import com.seata.template.model.TransactionType;
-import com.seata.template.transactional.GlobalTransactionManager;
+import model.GlobalTransaction;
+import model.MyTransaction;
+import model.TransactionType;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.reflect.MethodSignature;
 import org.springframework.core.Ordered;
 import org.springframework.stereotype.Component;
+import transactional.GlobalTransactionManager;
 
 import java.lang.reflect.Method;
 
@@ -17,16 +17,16 @@ import java.lang.reflect.Method;
 @Component
 public class GlobalTransactionAspect implements Ordered {
 
-    // ¶¨ÒåÇĞÃæµÄÓÅÏÈ¼¶: ¸ßÓÚSpringµÄ@Transactional×¢½âµÄÓÅÏÈ¼¶
+    // å®šä¹‰åˆ‡é¢çš„ä¼˜å…ˆçº§: é«˜äºSpringçš„@Transactionalæ³¨è§£çš„ä¼˜å…ˆçº§
     @Override
     public int getOrder() {
         return 10000;
     }
 
-    // Õë¶Ô×¢½âµÄÒ»¸öÇĞÃæ
+    // é’ˆå¯¹æ³¨è§£çš„ä¸€ä¸ªåˆ‡é¢
     @Around("@annotation(template.model.GlobalTransaction)")
     public void invoke(ProceedingJoinPoint point) {
-        // ÄÃµ½ÇĞÃæ·½·¨ÉÏÃæ±ê×¢µÄ×¢½â£¬È·¶¨·Ö²¼Ê½ÊÂÎñµÄ¿ªÆô
+        // æ‹¿åˆ°åˆ‡é¢æ–¹æ³•ä¸Šé¢æ ‡æ³¨çš„æ³¨è§£ï¼Œç¡®å®šåˆ†å¸ƒå¼äº‹åŠ¡çš„å¼€å¯
         MethodSignature signature = (MethodSignature) point.getSignature();
         Method method = signature.getMethod();
         GlobalTransaction globalTransaction = method.getAnnotation(GlobalTransaction.class);
@@ -36,17 +36,18 @@ public class GlobalTransactionAspect implements Ordered {
             groupId = GlobalTransactionManager.createTransactionGroup();
         }
         MyTransaction transaction = GlobalTransactionManager.createMyTransaction(groupId);
-        // Ö´ĞĞSpringµÄÇĞÃæÂß¼­: ¸ù¾İÅ×´íÀ´ÅĞ¶ÏTransactionType(Ìá½»»òÕß»Ø¹ö)
+        // æ‰§è¡ŒSpringçš„åˆ‡é¢é€»è¾‘: æ ¹æ®æŠ›é”™æ¥åˆ¤æ–­TransactionType(æäº¤æˆ–è€…å›æ»š)
         try {
-            point.proceed(); // Ö´ĞĞSpringÇĞÃæ
+            point.proceed(); // æ‰§è¡ŒSpringåˆ‡é¢
             transaction.setTransactionType(TransactionType.commit);
         } catch (Throwable e) {
             e.printStackTrace();
             transaction.setTransactionType(TransactionType.rollback);
         }
-        // ×¢²áµ½ÊÂÎñµÄĞ­µ÷Õß
+
+        // æ³¨å†Œåˆ°äº‹åŠ¡çš„åè°ƒè€…
         GlobalTransactionManager.registerMyTransaction(transaction);
-        // Èç¹ûÉÏÃæÃ»ÓĞ±¨´í£¬ÏÂÃæÈ«¾ÖµÄÌá½»
+        // å¦‚æœä¸Šé¢æ²¡æœ‰æŠ¥é”™ï¼Œä¸‹é¢å…¨å±€çš„æäº¤
         GlobalTransactionManager.submitGlobalTransaction(groupId);
     }
 }

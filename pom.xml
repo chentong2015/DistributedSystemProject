@@ -14,7 +14,7 @@
         <module>base-load-balancer</module>
         <module>caching-technology</module>
         <module>distributed-framework-zookeeper</module>
-        <module>distributed-transaction-seata</module>
+        <module>distributed-transaction</module>
         <module>remote-procedure-call</module>
     </modules>
 

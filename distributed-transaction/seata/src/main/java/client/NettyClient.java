@@ -1,4 +1,4 @@
-package com.seata.template.client;
+package client;
 
 import com.alibaba.fastjson.JSONObject;
 import io.netty.bootstrap.Bootstrap;
@@ -23,13 +23,13 @@ public class NettyClient {
                         @Override
                         protected void initChannel(Channel channel) {
                             ChannelPipeline channelPipeline = channel.pipeline();
-                            // 添加编码和解码器
+                            // 娣诲姞缂栫爜鍜岃В鐮佸櫒
                             channelPipeline.addLast("decoder", new StringDecoder());
                             channelPipeline.addLast("encoder", new StringEncoder());
                             channelPipeline.addLast("handler", clientHandler);
                         }
                     });
-            // 和服务端建立起连接，客户端会开启一个端口号(用于通讯)
+            // 鍜屾湇鍔＄寤虹珛璧疯繛鎺ワ紝瀹㈡埛绔細寮�鍚竴涓鍙ｅ彿(鐢ㄤ簬閫氳)
             ChannelFuture future = bootstrap.connect("127.0.0.1", 8000).sync();
             System.out.println("Connected server");
         } catch (InterruptedException e) {

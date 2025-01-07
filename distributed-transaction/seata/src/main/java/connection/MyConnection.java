@@ -1,15 +1,15 @@
-package com.seata.template.connection;
+package connection;
 
-import com.seata.template.model.MyTransaction;
-import com.seata.template.model.TransactionType;
+import model.MyTransaction;
+import model.TransactionType;
 
 import java.sql.*;
 import java.util.Map;
 import java.util.Properties;
 import java.util.concurrent.Executor;
 
-// TODO: ×Ô¶¨Connection½Ó¿ÚµÄÊµÏÖÀà£¬À´ÄÃµ½¶ÔÁ¬½ÓÖĞÊÂÎñµÄ¿ØÖÆÈ¨(ºÎÊ±Ìá½»»ò»Ø¹ö)
-// ¸ÃÀàĞÍ¶ÔÔ­Ê¼´´½¨ºÅµÄConnection¶ÔÏó½øĞĞ·â×°£¬Ö»¹Ø×¢ÌØ¶¨·½·¨µÄÂß¼­
+// TODO: è‡ªå®šConnectionæ¥å£çš„å®ç°ç±»ï¼Œæ¥æ‹¿åˆ°å¯¹è¿æ¥ä¸­äº‹åŠ¡çš„æ§åˆ¶æƒ(ä½•æ—¶æäº¤æˆ–å›æ»š)
+// è¯¥ç±»å‹å¯¹åŸå§‹åˆ›å»ºå·çš„Connectionå¯¹è±¡è¿›è¡Œå°è£…ï¼Œåªå…³æ³¨ç‰¹å®šæ–¹æ³•çš„é€»è¾‘
 public class MyConnection implements Connection {
 
     private Connection realConnection;
@@ -21,11 +21,11 @@ public class MyConnection implements Connection {
 
     @Override
     public void commit() throws SQLException {
-        // TODO: ÎªÁË±ÜÃâÕû¸öÖ÷Ïß³Ì±»×èÈû£¬ĞèÒª¿ªÆôÒ»¸öĞÂµÄÏß³ÌÖ´ĞĞ£¬²¢ÅĞ¶Ï×îÖÕµÄÌá½»
+        // TODO: ä¸ºäº†é¿å…æ•´ä¸ªä¸»çº¿ç¨‹è¢«é˜»å¡ï¼Œéœ€è¦å¼€å¯ä¸€ä¸ªæ–°çš„çº¿ç¨‹æ‰§è¡Œï¼Œå¹¶åˆ¤æ–­æœ€ç»ˆçš„æäº¤
         new Thread(new Runnable() {
             @Override
             public void run() {
-                // µ±ÒµÎñÂß¼­Ö´ĞĞµ½Õâ¸öÎ»ÖÃ£¬Ôò»á±»×èÈû£¬µÈ´ı±»×îÖÕ»½ĞÑ.signal();
+                // å½“ä¸šåŠ¡é€»è¾‘æ‰§è¡Œåˆ°è¿™ä¸ªä½ç½®ï¼Œåˆ™ä¼šè¢«é˜»å¡ï¼Œç­‰å¾…è¢«æœ€ç»ˆå”¤é†’.signal();
                 transaction.getTask().waitTask();
                 if (transaction.getTransactionType().equals(TransactionType.commit)) {
                     try {
@@ -49,7 +49,7 @@ public class MyConnection implements Connection {
         realConnection.rollback();
     }
 
-    // ÒÔÏÂµÄ·½·¨Ö±½ÓÊ¹ÓÃÔ­Ê¼ConnectionµÄÊµÏÖ·½·¨
+    // ä»¥ä¸‹çš„æ–¹æ³•ç›´æ¥ä½¿ç”¨åŸå§‹Connectionçš„å®ç°æ–¹æ³•
     @Override
     public Statement createStatement() throws SQLException {
         return realConnection.createStatement();

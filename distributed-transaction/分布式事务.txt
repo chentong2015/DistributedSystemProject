@@ -1,0 +1,22 @@
+TODO. 分布式事务
+一个事务跨多个分布式搭建的数据库，需要保证事务的执行
+一个事务的ACID属性无法保证跨库的事务，无法在多个DB上回滚
+
+
+TODO. 测试案例
+在执行server1的业务逻辑时，需要在一个事务中调用server2的业务逻辑
+@Service
+@Transactional
+public void testServer1() {
+   daoObject.insert("server1"); 在server1的DB中插入数据
+   HttpClient.get("http://127.0.0.1:8082/server2/test");
+   int i = 10 / 0;
+   TODO: 由于异常导致事务的回滚，server1 DB中插入数据回滚
+}
+
+@Service
+@Transactional
+public void testServer2() {
+   TODO. 在server2的DB中插入的数据会被保留
+   daoObject.insert("server2");
+}

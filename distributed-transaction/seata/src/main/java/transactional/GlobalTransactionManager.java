@@ -1,8 +1,8 @@
-package com.seata.template.transactional;
+package transactional;
 
+import client.NettyClient;
 import com.alibaba.fastjson.JSONObject;
-import com.seata.template.client.NettyClient;
-import com.seata.template.model.MyTransaction;
+import model.MyTransaction;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.HashMap;
@@ -21,7 +21,7 @@ public class GlobalTransactionManager {
         GlobalTransactionManager.nettyClient = nettyClient;
     }
 
-    // 1. 创建事务组，并返回GroupId
+    // 1. 鍒涘缓浜嬪姟缁勶紝骞惰繑鍥濭roupId
     public static String createTransactionGroup() {
         if (currentGroupId.get() != null) {
             return currentGroupId.get();
@@ -36,7 +36,7 @@ public class GlobalTransactionManager {
         }
     }
 
-    // 2. 创建分支事务
+    // 2. 鍒涘缓鍒嗘敮浜嬪姟
     public static MyTransaction createMyTransaction(String groupId) {
         String transactionId = UUID.randomUUID().toString();
         MyTransaction myTransaction = new MyTransaction(groupId, transactionId);
@@ -45,7 +45,7 @@ public class GlobalTransactionManager {
         return myTransaction;
     }
 
-    // 3. 注册分支事务
+    // 3. 娉ㄥ唽鍒嗘敮浜嬪姟
     public static MyTransaction registerMyTransaction(MyTransaction myTransaction) {
         JSONObject jsonObject = new JSONObject();
         jsonObject.put("command", "register");
@@ -56,7 +56,7 @@ public class GlobalTransactionManager {
         return myTransaction;
     }
 
-    // 4. 提交全局的分布式事务
+    // 4. 鎻愪氦鍏ㄥ眬鐨勫垎甯冨紡浜嬪姟
     public static void submitGlobalTransaction(String groupId) {
         JSONObject jsonObject = new JSONObject();
         jsonObject.put("groupId", groupId);

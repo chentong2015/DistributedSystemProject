@@ -1,12 +1,12 @@
-package com.seata.template.client;
+package client;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
-import com.seata.template.model.MyTransaction;
-import com.seata.template.model.TransactionType;
-import com.seata.template.transactional.GlobalTransactionManager;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
+import model.MyTransaction;
+import model.TransactionType;
+import transactional.GlobalTransactionManager;
 
 public class NettyClientHandler extends ChannelInboundHandlerAdapter {
 
@@ -24,19 +24,19 @@ public class NettyClientHandler extends ChannelInboundHandlerAdapter {
         String groupId = jsonObject.getString("groupId");
         String command = jsonObject.getString("command");
 
-        // TODO: Ã¿Ò»¸öclient½ÓÊÕµ½Õû¸ö·Ö²¼Ê½ÊÂÎñµÄgroupIdºÍÒªÖ´ĞĞµÄcommand
-        // ÄÃµ½GroupId¶ÔÓ¦µÄ·ÖÖ§ÊÂÎñ£¬¸ù¾İ½ÓÊÕµ½µÄServer»Ø¸´ĞÅÏ¢£¬¾ö¶¨×îÖÕ×´Ì¬
+        // TODO: æ¯ä¸€ä¸ªclientæ¥æ”¶åˆ°æ•´ä¸ªåˆ†å¸ƒå¼äº‹åŠ¡çš„groupIdå’Œè¦æ‰§è¡Œçš„command
+        // æ‹¿åˆ°GroupIdå¯¹åº”çš„åˆ†æ”¯äº‹åŠ¡ï¼Œæ ¹æ®æ¥æ”¶åˆ°çš„Serverå›å¤ä¿¡æ¯ï¼Œå†³å®šæœ€ç»ˆçŠ¶æ€
         MyTransaction transaction = GlobalTransactionManager.getMyTransaction(groupId);
         if (command.equals("commit")) {
             transaction.setTransactionType(TransactionType.commit);
         } else {
             transaction.setTransactionType(TransactionType.rollback);
         }
-        // »½ĞÑµÈ´ı£¬ÈÃ¸Ã·ÖÖ§ÊÂÎñÖ´ĞĞÖ¸¶¨µÄÂß¼­
+        // å”¤é†’ç­‰å¾…ï¼Œè®©è¯¥åˆ†æ”¯äº‹åŠ¡æ‰§è¡ŒæŒ‡å®šçš„é€»è¾‘
         transaction.getTask().signalTask();
     }
 
-    // ÏòServer¶Ë·¢ËÍÊı¾İ
+    // å‘Serverç«¯å‘é€æ•°æ®
     public synchronized Object call(JSONObject data) {
         context.writeAndFlush(data.toJSONString()).channel().newPromise();
         return null;

@@ -1,4 +1,4 @@
-package com.seata.template.model;
+package model;
 
 public enum TransactionType {
     commit,

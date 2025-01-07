@@ -1,4 +1,4 @@
-package com.seata.template.transactional;
+package transactional;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.*;
@@ -7,7 +7,7 @@ import io.netty.channel.socket.nio.NioServerSocketChannel;
 import io.netty.handler.codec.string.StringDecoder;
 import io.netty.handler.codec.string.StringEncoder;
 
-// TC: Server端是基于Netty Server搭建
+// TC: Server绔槸鍩轰簬Netty Server鎼缓
 public class GlobalTransactionController {
 
     public static void main(String[] args) {
@@ -22,7 +22,7 @@ public class GlobalTransactionController {
                         @Override
                         protected void initChannel(Channel channel) {
                             ChannelPipeline channelPipeline = channel.pipeline();
-                            // 添加编码和解码器
+                            // 娣诲姞缂栫爜鍜岃В鐮佸櫒
                             channelPipeline.addLast("decoder", new StringDecoder());
                             channelPipeline.addLast("encoder", new StringEncoder());
                             channelPipeline.addLast(new GlobalTransactionControllerHandler());

@@ -1,0 +1,24 @@
+如何基于@Transactional注解来手写分布式事务框架?
+如何拿到事务的控制权，控制什么时时候提交?
+1. 建立链连接
+2. 开启事务
+3. 执行方法
+4. 提交或回滚
+
+TODO. 测试案例: 分布式Server上的事务受到全局事务管理，统一提交或回滚
+Server1: @Service
+@GlobalTransaction // 全局事务
+@Transactional
+public void testServer1() {
+   daoObject.insert("server1");
+   HttpClient.get("http://127.0.0.1:8082/server2/test");
+   int i = 10 / 0;
+   // 异常导致server2数据回滚
+}
+
+@Service
+@GlobalTransaction // 必须要添加注解，否则Server2中数据没有办法提交
+@Transactional
+public void testServer2() {
+   daoObject.insert("server2"); // 在server2的DB中插入数据
+}

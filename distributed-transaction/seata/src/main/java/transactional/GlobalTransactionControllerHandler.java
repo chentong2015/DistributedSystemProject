@@ -1,4 +1,4 @@
-package com.seata.template.transactional;
+package transactional;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
@@ -34,13 +34,13 @@ public class GlobalTransactionControllerHandler extends ChannelInboundHandlerAda
         String transactionType = jsonObject.getString("transactionType");
         String transactionId = jsonObject.getString("transactionsId");
         if (command.equals("create")) {
-            // 1. ¿ªÆôÈ«¾ÖÊÂÎñ, »®·ÖÒ»¸ö×é£¬°üº¬Õâ¸öÊÂÎñÏÂµÄËùÓĞtransactionId
+            // 1. å¼€å¯å…¨å±€äº‹åŠ¡, åˆ’åˆ†ä¸€ä¸ªç»„ï¼ŒåŒ…å«è¿™ä¸ªäº‹åŠ¡ä¸‹çš„æ‰€æœ‰transactionId
             transactionIdMap.put(groupId, new ArrayList<>());
         } else if (command.equals("register")) {
-            // 2. ×¢²á·ÖÖ§ÊÂÎñ
+            // 2. æ³¨å†Œåˆ†æ”¯äº‹åŠ¡
             transactionIdMap.get(groupId).add(transactionId);
             if (transactionType.equals("rollback")) {
-                // 3. ÅĞ¶Ï½ÓÊÕµ½Ò»¸ö»Ø¹ö×´Ì¬
+                // 3. åˆ¤æ–­æ¥æ”¶åˆ°ä¸€ä¸ªå›æ»šçŠ¶æ€
                 sentMessage(groupId, "rollback");
             }
         } else if (command.equals("commit")) {
@@ -48,8 +48,8 @@ public class GlobalTransactionControllerHandler extends ChannelInboundHandlerAda
         }
     }
 
-    // ÏòÕâ¸öÊÂÎñ×éÖĞËùÓĞµÄ·ÖÖ§ÊÂÎñ·¢ËÍcommandÖ¸Áî
-    // ÔÚ¿Í»§¶Ë½ÓÊÕµ½Ö¸ÁîÏûÏ¢Ö®ºó£¬Ö´ĞĞÏàÓ¦µÄÂß¼­
+    // å‘è¿™ä¸ªäº‹åŠ¡ç»„ä¸­æ‰€æœ‰çš„åˆ†æ”¯äº‹åŠ¡å‘é€commandæŒ‡ä»¤
+    // åœ¨å®¢æˆ·ç«¯æ¥æ”¶åˆ°æŒ‡ä»¤æ¶ˆæ¯ä¹‹åï¼Œæ‰§è¡Œç›¸åº”çš„é€»è¾‘
     private void sentMessage(String groupId, String command) {
         JSONObject result = new JSONObject();
         result.put("groupId", groupId);

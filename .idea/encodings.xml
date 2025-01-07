@@ -3,8 +3,7 @@
   <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$/../../Software System Architect/SoftwareSystemArchitect/system-design/src/main/java/interviews/caching_system/Web缓存设计.png" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/base-distributed-system/architect/高可用集群架构.png" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/base-distributed-system/single_point_failure/Replications.png" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/base-distributed-system/分布式系统理论.txt" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/base-distributed-system/分布式系统.txt" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/base-distributed-system/集群系统设计.txt" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/base-load-balancer/design/LB设计实战.PNG" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/base-load-balancer/design/负载均衡器.txt" charset="UTF-8" />
@@ -48,6 +47,23 @@
     <file url="file://$PROJECT_DIR$/distributed-id-generator/3. 号段模式.JPG" charset="GBK" />
     <file url="file://$PROJECT_DIR$/distributed-id-generator/3. 号段模式架构实现.JPG" charset="GBK" />
     <file url="file://$PROJECT_DIR$/distributed-id-generator/snowflake/MysqlAutoIncrementId.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/distributed-transaction/seata/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/distributed-transaction/seata/src/main/java/aspect" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/distributed-transaction/seata/src/main/java/aspect/DataSourceAspect.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/distributed-transaction/seata/src/main/java/client" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/distributed-transaction/seata/src/main/java/connection" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/distributed-transaction/seata/src/main/java/model" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/distributed-transaction/seata/src/main/java/model/GlobalTransaction.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/distributed-transaction/seata/src/main/java/model/MyTransaction.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/distributed-transaction/seata/src/main/java/task" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/distributed-transaction/seata/src/main/java/task/MyTask.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/distributed-transaction/seata/src/main/java/transactional" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/distributed-transaction/seata/src/main/java/transactional/GlobalTransactionControllerHandler.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/distributed-transaction/seata/src/main/java/transactional/GlobalTransactionManager.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/distributed-transaction/seata/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/distributed-transaction/分布式事务框架Seata.txt" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/distributed-transaction/分布式事务框架Seata.txt" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/distributed-transaction/分布式事务框架Seata.txt" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/indexing-elasticsearch/Elasticsearch弹性搜索.txt" charset="GBK" />
     <file url="file://$PROJECT_DIR$/remote-procedure-call/dubbo-rpc/src/main/java/rmi/BaseJavaRMI.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/remote-procedure-call/rpc-server/src/main/java/com/rpc/server/MainServer.java" charset="GBK" />

@@ -1,13 +1,13 @@
-package com.seata.template.model;
+package model;
 
-import com.seata.template.task.MyTask;
+import task.MyTask;
 
 public class MyTransaction {
 
     private String groupId;
     private String transactionId;
     private TransactionType transactionType;
-    // 每个事务都有它自己的一个任务
+
     private MyTask task = new MyTask();
 
     public MyTransaction(String groupId, String transactionId) {

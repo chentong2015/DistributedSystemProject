@@ -1,6 +1,6 @@
-package com.seata.template.aspect;
+package aspect;
 
-import com.seata.template.connection.MyConnection;
+import connection.MyConnection;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
@@ -12,14 +12,15 @@ import java.sql.Connection;
 @Component
 public class DataSourceAspect {
 
-    // ¶Ôµ×²ãDataSource×öÇĞÃæ£¬ÔÚSpringÏòÊı¾İ¿â´´½¨ÇëÇóÊ±£¬»á×ß¸ÃÇĞÃæµÄÂß¼­
-    // ¶ÔÒ»¸ö½Ó¿Ú·½·¨×öÇĞÃæ£¬ËùÓĞ¸Ã½Ó¿ÚµÄÊµÏÖÀà¶¼»á±»ÇĞµ½
+    // å¯¹åº•å±‚DataSourceåšåˆ‡é¢ï¼Œåœ¨Springå‘æ•°æ®åº“åˆ›å»ºè¯·æ±‚æ—¶ï¼Œä¼šèµ°è¯¥åˆ‡é¢çš„é€»è¾‘
+    // å¯¹ä¸€ä¸ªæ¥å£æ–¹æ³•åšåˆ‡é¢ï¼Œæ‰€æœ‰è¯¥æ¥å£çš„å®ç°ç±»éƒ½ä¼šè¢«åˆ‡åˆ°
     @Around("execution(* javax.sql.DataSource.getConnection(..))")
     public Connection invoke(ProceedingJoinPoint point) throws Throwable {
-        // TODO: ÕâÀï»á·µ»ØSpring±¾ÉíµÄConnectionÊµÏÖÀà
+        // TODO: è¿™é‡Œä¼šè¿”å›Springæœ¬èº«çš„Connectionå®ç°ç±»
         Connection connection = (Connection) point.proceed();
-        // Ê¹ÓÃÔ­Ê¼ÄÃµ½µÄÊµÏÖÀàµÄ¶ÔÏó
-        // ·µ»Ø×Ô¶¨ÒåÊµÏÖµÄConnection¸øSpring£¬ÒÔ±ãÄÃµ½¶ÔÊÂÎñµÄ¿ØÖÆÈ¨
+
+        // ä½¿ç”¨åŸå§‹æ‹¿åˆ°çš„å®ç°ç±»çš„å¯¹è±¡
+        // è¿”å›è‡ªå®šä¹‰å®ç°çš„Connectionç»™Springï¼Œä»¥ä¾¿æ‹¿åˆ°å¯¹äº‹åŠ¡çš„æ§åˆ¶æƒ
         return new MyConnection(connection);
     }
 }

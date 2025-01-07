@@ -1,4 +1,4 @@
-package com.seata.template.task;
+package task;
 
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
@@ -12,7 +12,7 @@ public class MyTask {
     public void waitTask() {
         try {
             lock.lock();
-            condition.await(); // �̵߳ȴ�
+            condition.await(); // 线程等待
         } catch (InterruptedException e) {
             e.printStackTrace();
         } finally {
@@ -22,7 +22,7 @@ public class MyTask {
 
     public void signalTask() {
         lock.lock();
-        condition.signal(); // ֪ͨ�ȴ����߳�
+        condition.signal(); // 通知等待的线程
         lock.unlock();
     }
 }
