@@ -1,4 +1,4 @@
-package eviction_policy.model;
+package eviction_policy.lru.node;
 
 import java.util.Collection;
 import java.util.concurrent.atomic.AtomicInteger;

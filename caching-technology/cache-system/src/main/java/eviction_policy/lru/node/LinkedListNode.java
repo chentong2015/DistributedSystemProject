@@ -1,4 +1,4 @@
-package eviction_policy.model;
+package eviction_policy.lru.node;
 
 public interface LinkedListNode<V> {
 
