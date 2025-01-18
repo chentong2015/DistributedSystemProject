@@ -1,0 +1,4 @@
+Content Delivery Network 内容分发网络
+1. CDN是一种缓存，适用于提供大量Static Content的网站
+2. 利用"最靠近"每位用户的服务器，更快更可靠地发送给用户
+3. 通常只有当系统足够大，数据足够大时才有必要使用CDN
