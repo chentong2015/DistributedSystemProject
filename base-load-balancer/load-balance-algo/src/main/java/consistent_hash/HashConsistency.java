@@ -1,4 +1,4 @@
-package hash;
+package consistent_hash;
 
 import java.util.SortedMap;
 
@@ -13,7 +13,8 @@ public class HashConsistency {
         SortedMap<Integer, String> subMap = hashCircle.getTailMap(hash);
         Integer key = subMap.firstKey();
 
-        // 如果算出的hash值过大，没有符合条件的node，则取哈希环中最小node构成一个封闭环状
+        // 如果算出的hash值过大，没有符合条件的node
+        // 则取哈希环中最小node构成一个封闭环状
         if (key == null) {
             int firstKey = hashCircle.getFirstKey();
             return hashCircle.getNodeValueByKey(firstKey);

@@ -1,4 +1,4 @@
-package model;
+package base;
 
 // Nginx, dubbo > RequestId
 // 客户端请求时逐增生成的id数字, 00001,,,

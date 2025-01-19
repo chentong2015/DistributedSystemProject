@@ -8,13 +8,13 @@
     <file url="file://$PROJECT_DIR$/base-load-balancer/design/LB设计实战.PNG" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/base-load-balancer/design/负载均衡器.txt" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/base-load-balancer/load-balance-algo/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/base-load-balancer/load-balance-algo/src/main/java/hash/1. Hash一致性问题.JPG" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/base-load-balancer/load-balance-algo/src/main/java/hash/HashCircle.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/base-load-balancer/load-balance-algo/src/main/java/hash/HashConsistency.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/base-load-balancer/load-balance-algo/src/main/java/model/RequestId.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/base-load-balancer/load-balance-algo/src/main/java/model/ServerIP.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/base-load-balancer/load-balance-algo/src/main/java/base/RequestId.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/base-load-balancer/load-balance-algo/src/main/java/base/ServerIP.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/base-load-balancer/load-balance-algo/src/main/java/consistent_hash/1. Hash一致性问题.JPG" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/base-load-balancer/load-balance-algo/src/main/java/consistent_hash/HashCircle.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/base-load-balancer/load-balance-algo/src/main/java/consistent_hash/HashConsistency.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/base-load-balancer/load-balance-algo/src/main/java/random/WeightRandom.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/base-load-balancer/load-balance-algo/src/main/java/round_robin/WeightRoundRobin.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/base-load-balancer/load-balance-algo/src/main/java/round_robin/WeightRoundRobin1.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/base-load-balancer/load-balance-algo/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/base-load-balancer/load-balance-nginx" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/base-load-balancer/load-balance-nginx/NginxHTTP服务器.txt" charset="UTF-8" />
@@ -26,8 +26,6 @@
     <file url="file://$PROJECT_DIR$/caching-technology/cache-design/缓存系统.txt" charset="GBK" />
     <file url="file://$PROJECT_DIR$/caching-technology/cache-design/缓存系统实战.txt" charset="GBK" />
     <file url="file://$PROJECT_DIR$/caching-technology/cache-problems/1. 缓存三大问题.txt" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/caching-technology/cache-problems/1. 缓存三大问题.txt" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/caching-technology/cache-problems/2. 双写不一致问题.txt" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/caching-technology/cache-problems/2. 双写不一致问题.txt" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/caching-technology/cache-system-sample/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/caching-technology/cache-system-sample/src/main/resources" charset="UTF-8" />

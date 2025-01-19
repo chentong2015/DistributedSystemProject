@@ -1,6 +1,6 @@
-package hash;
+package consistent_hash;
 
-import model.ServerIP;
+import base.ServerIP;
 
 import java.util.SortedMap;
 import java.util.TreeMap;

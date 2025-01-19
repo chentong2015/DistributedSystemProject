@@ -1,0 +1,14 @@
+TODO. 实战项目场景
+client ip --> consistent_hash function --> hashcode --> server ip
+
+Case 1:
+使用n台缓存服务器时，常规的负载均衡是对资源x的请求使用hash(x)=(o mod n)映射到某一台缓存服务器
+当增加或减少缓存服务器时，可能会改变所有资源对应的hash值，导致缓存都失效
+
+Case 2:
+根据客户端的请求ip算出hashcode，请求到指定server，一个客户端只对应一台Server来处理
+避免在不同的Server上Session不一致的问题(没有共享)
+
+Case 3: 分布式Session
+在分布式Server集群架构场景中，不同Server所保存的Session没有全局共享
+导致在客户端请求，经过负载均衡算法之后，找到的Server没有Session信息，因此无法完成相关操作
