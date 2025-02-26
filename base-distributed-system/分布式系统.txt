@@ -36,5 +36,7 @@
   监控系统的什么信息，监控系统的日志数据(Log格式)
 
 - Sustainable 系统的可持续性
+
 - Efficiency 有效性
+
 - Cost 花销成本
