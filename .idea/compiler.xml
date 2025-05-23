@@ -10,9 +10,9 @@
         <module name="ehcache" />
         <module name="dubbo-rpc" />
         <module name="dubbo-framework" />
+        <module name="distributed-zookeeper" />
         <module name="rpc-client" />
         <module name="rpc-server" />
-        <module name="distributed-framework-zookeeper" />
         <module name="load-balance-algo" />
         <module name="seata" />
       </profile>

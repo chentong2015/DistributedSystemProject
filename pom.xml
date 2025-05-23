@@ -13,8 +13,8 @@
     <modules>
         <module>base-load-balancer</module>
         <module>caching-technology</module>
-        <module>distributed-framework-zookeeper</module>
         <module>distributed-transaction</module>
+        <module>distributed-zookeeper</module>
         <module>remote-procedure-call</module>
     </modules>
 
