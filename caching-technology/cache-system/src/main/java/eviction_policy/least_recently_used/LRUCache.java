@@ -14,14 +14,14 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
 // 1. 特定的数据逐出算法：缓存的数据存储在内存中，通过逐出算法保证了缓存不会溢出
 // 2. O(1): 所有缓存的操作都是线性级别的复杂度，通过Hash key快速定位
 // 3. Queue: 通过队列指针的修改来逐出，和快速插入到队首
-public class LeastRecentlyUsedCache<K, V> implements Cache<K, V> {
+public class LRUCache<K, V> implements Cache<K, V> {
 
     private int size;
     private Map<K, LinkedListNode<CacheElement<K, V>>> linkedListNodeMap;
     private DoublyLinkedList<CacheElement<K, V>> doublyLinkedList;
     private ReentrantReadWriteLock lock = new ReentrantReadWriteLock();
 
-    public LeastRecentlyUsedCache(int size) {
+    public LRUCache(int size) {
         this.size = size;
         this.linkedListNodeMap = new ConcurrentHashMap<>(size);
         this.doublyLinkedList = new DoublyLinkedList<>();
