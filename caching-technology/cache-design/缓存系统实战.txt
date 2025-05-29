@@ -1,7 +1,7 @@
-TODO. �������ⰸ�����������
-Case 1. �ڻ���ʧЧ�Ķ���ʱ���У���α�֤UI�û������� ?
-Case 2. ͬһ������ͬһUI����ͬUser���ģ��ڶ�ʱ���ڻ��������û�б仯�����UIҳ����ʾ����
+TODO. 缓存问题案例及解决方案
+Case 1. 在缓存失效的短暂时间中，如何保证UI用户的体验 ?
+Case 2. 同一个软件同一UI被不同User更改，在短时间内缓存的数据没有变化会造成UI页面显示出错
 
-- Invalid���ƣ������ݱ��ʱ���������еĴ������ݣ�ִ�ж����request�����������
-- Notification: ����֪ͨevent�¼������ڱ��滺����ָ�����ݵĸ���
-- Reloading: UI��ͨ��ˢ������ȡ���µ����ݣ����¼���
+- Invalid机制：在数据变更时废弃缓存中的错误数据，执行额外的request变更缓存数据
+- Notification: 发布通知event事件，用于表面缓存中指定数据的更新
+- Reloading: UI端通过刷新来获取最新的数据，重新加载
