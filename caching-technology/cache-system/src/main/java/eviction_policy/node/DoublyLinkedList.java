@@ -1,4 +1,4 @@
-package eviction_policy.least_recently_used.node;
+package eviction_policy.node;
 
 import java.util.Collection;
 import java.util.concurrent.atomic.AtomicInteger;

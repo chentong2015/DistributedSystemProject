@@ -23,16 +23,16 @@
     <file url="file://$PROJECT_DIR$/base-load-balancer/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/caching-technology/LRU-cache/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/caching-technology/LRU-cache/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/caching-technology/cache-design/test2.txt" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/caching-technology/cache-design/缓存系统.txt" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/caching-technology/cache-design/缓存系统.txt" charset="GBK" />
     <file url="file://$PROJECT_DIR$/caching-technology/cache-design/缓存系统实战.txt" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/caching-technology/cache-problems/1. 缓存三大问题.txt" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/caching-technology/cache-problems/2. 双写不一致问题.txt" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/caching-technology/cache-design/缓存系统实战.txt" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/caching-technology/cache-system-sample/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/caching-technology/cache-system-sample/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/caching-technology/cache-system/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/caching-technology/cache-system/src/main/java/bloom_filter/DistributedBloomFilter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/caching-technology/cache-system/src/main/java/cache_problems/1. 缓存三大问题.txt" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/caching-technology/cache-system/src/main/java/cache_problems/2. 双写不一致问题.txt" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/caching-technology/cache-system/src/main/java/cache_problems/RedisCachingDemo.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/caching-technology/cache-system/src/main/java/cache_problems/bloom_filter" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/caching-technology/cache-system/src/main/java/cache_problems/model/OrderService.java" charset="UTF-8" />
