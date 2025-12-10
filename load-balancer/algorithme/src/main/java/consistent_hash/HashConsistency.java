@@ -2,19 +2,19 @@ package consistent_hash;
 
 import java.util.SortedMap;
 
-// Ò»ÖÂĞÔhash¸ºÔØ¾ùºâËã·¨
+// ä¸€è‡´æ€§hashè´Ÿè½½å‡è¡¡ç®—æ³•
 public class HashConsistency {
 
     public static String getServer(String clientInfo) {
         HashCircle hashCircle = new HashCircle();
         int hash = hashCircle.getHashcode(clientInfo);
 
-        // ÔÚºìºÚÊ÷µÄ×ÓÊ÷ÖĞÕÒÑ°Âú×ãÌõ¼şµÄServer
+        // åœ¨çº¢é»‘æ ‘çš„å­æ ‘ä¸­æ‰¾å¯»æ»¡è¶³æ¡ä»¶çš„Server
         SortedMap<Integer, String> subMap = hashCircle.getTailMap(hash);
         Integer key = subMap.firstKey();
 
-        // Èç¹ûËã³öµÄhashÖµ¹ı´ó£¬Ã»ÓĞ·ûºÏÌõ¼şµÄnode
-        // ÔòÈ¡¹şÏ£»·ÖĞ×îĞ¡node¹¹³ÉÒ»¸ö·â±Õ»·×´
+        // å¦‚æœç®—å‡ºçš„hashå€¼è¿‡å¤§ï¼Œæ²¡æœ‰ç¬¦åˆæ¡ä»¶çš„node
+        // åˆ™å–å“ˆå¸Œç¯ä¸­æœ€å°nodeæ„æˆä¸€ä¸ªå°é—­ç¯çŠ¶
         if (key == null) {
             int firstKey = hashCircle.getFirstKey();
             return hashCircle.getNodeValueByKey(firstKey);

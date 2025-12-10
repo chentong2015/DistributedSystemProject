@@ -1,8 +1,8 @@
+package interval_ids;
+
 import java.util.ArrayList;
 import java.util.List;
 
-// 约定范围区间ID生成器:
-// 排除指定IDs后，在指定的区间范围内逐个生成下一个ID
 public class IntervalIdGenerator {
 
     private long nextId;

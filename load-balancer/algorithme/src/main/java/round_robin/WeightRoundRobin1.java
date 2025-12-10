@@ -4,7 +4,7 @@ import base.RequestId;
 import base.ServerIP;
 import java.util.Map;
 
-// TODO. ¼ÓÈ¨ÂÖÑ¯£¬¸ù¾İ²»Í¬µÄÈ¨ÖØ·ÖÅä²»Í¬µÄÇëÇóÊıÁ¿
+// TODO. åŠ æƒè½®è¯¢ï¼Œæ ¹æ®ä¸åŒçš„æƒé‡åˆ†é…ä¸åŒçš„è¯·æ±‚æ•°é‡
 public class WeightRoundRobin1 {
 
     private static String getWeightServer() {
@@ -16,7 +16,7 @@ public class WeightRoundRobin1 {
                 return entry.getKey();
             }
 
-            // Í¨¹ı²»¶Ï¼õÉÙÈ¨ÖØ£¬½«Öµ°´±ÈÀıÂäµ½ÌØ¶¨µÄServer
+            // é€šè¿‡ä¸æ–­å‡å°‘æƒé‡ï¼Œå°†å€¼æŒ‰æ¯”ä¾‹è½åˆ°ç‰¹å®šçš„Server
             index -= weight;
         }
         return "No Server Found";

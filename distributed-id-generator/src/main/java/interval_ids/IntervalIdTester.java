@@ -1,3 +1,5 @@
+package interval_ids;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;

@@ -13,6 +13,7 @@
         <option value="$PROJECT_DIR$/remote-procedure-call/dubbo-framework/pom.xml" />
         <option value="$PROJECT_DIR$/../../Java Master/JavaMasterApplications/networking-web-services/jee-servlet-core/pom.xml" />
         <option value="$PROJECT_DIR$/remote-procedure-call/dubbo-rpc/pom.xml" />
+        <option value="$PROJECT_DIR$/distributed-zookeeper/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

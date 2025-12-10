@@ -11,6 +11,7 @@
         <module name="dubbo-rpc" />
         <module name="dubbo-framework" />
         <module name="distributed-zookeeper" />
+        <module name="distributed-id-generator" />
         <module name="rpc-client" />
         <module name="rpc-server" />
         <module name="load-balance-algo" />

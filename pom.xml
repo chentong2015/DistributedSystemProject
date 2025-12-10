@@ -8,13 +8,31 @@
     <groupId>org.example</groupId>
     <artifactId>DistributedSystemProject</artifactId>
     <packaging>pom</packaging>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <basedir/>
+                    <buildDirectory/>
+                    <mainOutputDirectory/>
+                    <outputDirectory/>
+                    <projectArtifact/>
+                    <source>16</source>
+                    <target>16</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
     <version>1.0-SNAPSHOT</version>
 
     <modules>
-        <module>base-load-balancer</module>
         <module>caching-technology</module>
+        <module>distributed-id-generator</module>
         <module>distributed-transaction</module>
         <module>distributed-zookeeper</module>
+        <module>load-balancer</module>
         <module>remote-procedure-call</module>
     </modules>
 

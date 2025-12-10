@@ -5,15 +5,15 @@ import base.ServerIP;
 import java.util.SortedMap;
 import java.util.TreeMap;
 
-// TODO: ¹şÏ£»·µÄJavaÊµÏÖ: TreeMap(µ×²ãºìºÚÊ÷)
+// TODO: å“ˆå¸Œç¯çš„Javaå®ç°: TreeMap(åº•å±‚çº¢é»‘æ ‘)
 public class HashCircle {
 
     // hashcode -> server ip
     private final TreeMap<Integer, String> hashCircle = new TreeMap<>();
     private static final int VIRTUAL_NODES_NUM = 160;
 
-    // ¶ÔÃ¿Ò»¸öÕæÊµ½áµãÌí¼ÓĞéÄâ½áµã£¬½áµã»á¸ù¾İhashËã·¨½øĞĞÉ¢ÁĞ
-    // Éú³ÉÖ¸¶¨ÊıÁ¿µÄĞéÄâ½áµã£¬¿ÉÒÔÔöÇ¿É¢ÁĞĞÔ
+    // å¯¹æ¯ä¸€ä¸ªçœŸå®ç»“ç‚¹æ·»åŠ è™šæ‹Ÿç»“ç‚¹ï¼Œç»“ç‚¹ä¼šæ ¹æ®hashç®—æ³•è¿›è¡Œæ•£åˆ—
+    // ç”ŸæˆæŒ‡å®šæ•°é‡çš„è™šæ‹Ÿç»“ç‚¹ï¼Œå¯ä»¥å¢å¼ºæ•£åˆ—æ€§
     public HashCircle() {
         for (String ip : ServerIP.SERVERS) {
             for (int i = 0; i < VIRTUAL_NODES_NUM; i++) {

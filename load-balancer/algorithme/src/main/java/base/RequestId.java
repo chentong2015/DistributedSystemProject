@@ -1,12 +1,12 @@
 package base;
 
 // Nginx, dubbo > RequestId
-// 客户端请求时逐增生成的id数字, 00001,,,
+// 瀹㈡埛绔姹傛椂閫愬鐢熸垚鐨刬d鏁板瓧, 00001,,,
 public class RequestId {
 
     private static int id = 0;
 
-    // 模拟请求id的逐增
+    // 妯℃嫙璇锋眰id鐨勯�愬
     public static int getRequestId() {
         return id++;
     }

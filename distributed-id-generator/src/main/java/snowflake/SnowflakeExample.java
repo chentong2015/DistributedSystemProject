@@ -1,10 +1,12 @@
+package snowflake;
+
 // 雪花算法: 保证每台机器每个毫秒内生成的ID不同
 // 分布式ID: long 64bits分段存储不同的信息
 //    1 bit: not used 符号位
 //    41 bits: 时间戳，表示某一个毫秒，可以用约70年
 //    10 bits: 机器号，这里可以细分成数据区+机器号
 //    12 bits: 序列号，一毫秒中可以生成2^12次方个分布式id
-public class TwitterSnowflake {
+public class SnowflakeExample {
 
     private long datacenterId;
     private long machineId;
@@ -30,7 +32,7 @@ public class TwitterSnowflake {
     private final static long MAX_SEQUENCE = ~(-1L << SEQUENCE_BIT);
 
     // 需要根据配置的数据中心和机器id来使用，如果机器过多，则会带来很多大的工作量 ==> 如何自动生成 ?
-    public TwitterSnowflake(long datacenterId, long machineId) {
+    public SnowflakeExample(long datacenterId, long machineId) {
         if (datacenterId > MAX_DATACENTER_NUM || datacenterId < 0) {
             throw new IllegalArgumentException("数据中心数目范围出错");
         }
