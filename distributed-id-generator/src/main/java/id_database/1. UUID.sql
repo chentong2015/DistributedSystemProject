@@ -1,0 +1,9 @@
+-- Oracle 获取UUID
+SELECT SYS_GUID() FROM dual;
+SELECT RAWTOHEX(SYS_GUID()) FROM dual;
+
+-- SQL Server 获取UUID
+SELECT NEWID();
+
+-- MySQL 获取UUID
+SELECT uuid()

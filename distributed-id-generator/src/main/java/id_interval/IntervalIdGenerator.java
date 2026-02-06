@@ -1,4 +1,4 @@
-package interval_ids;
+package id_interval;
 
 import java.util.ArrayList;
 import java.util.List;
