@@ -1,7 +1,5 @@
 TODO: CAP理论只能满足CP或者AP, 无法三者同时兼容
-Consistency: 一致性(强一致性)
-Availability: 可用性
-Partition Tolerance: 分区容错性
+Consistency + Availability + Partition Tolerance
 
 数据一致性的类型
 1. 强一致性: 数据严格保证同步，但是同步需要时间
