@@ -16,11 +16,9 @@
     </properties>
 
     <modules>
-        <module>caching-technology</module>
+        <module>core-load-balancer</module>
         <module>distributed-id-generator</module>
         <module>distributed-transaction</module>
         <module>distributed-zookeeper</module>
-        <module>load-balancer</module>
-        <module>remote-procedure-call</module>
     </modules>
 </project>

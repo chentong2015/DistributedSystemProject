@@ -6,15 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="cache-system" />
-        <module name="ehcache" />
-        <module name="dubbo-rpc" />
         <module name="dubbo-framework" />
         <module name="algorithme" />
         <module name="distributed-zookeeper" />
         <module name="distributed-id-generator" />
-        <module name="rpc-client" />
-        <module name="rpc-server" />
         <module name="seata" />
       </profile>
     </annotationProcessing>
@@ -22,7 +17,9 @@
       <module name="api-servlet-core" target="1.8" />
       <module name="architect-system-design" target="15" />
       <module name="big-data-processing-system" target="15" />
+      <module name="cache-system" target="17" />
       <module name="cache-system-sample" target="17" />
+      <module name="caching-technology" target="1.8" />
       <module name="container-docker" target="15" />
       <module name="container-docker-basic" target="15" />
       <module name="container-serverless-framework" target="15" />
@@ -35,6 +32,8 @@
       <module name="distributed-systems" target="16" />
       <module name="distributed-transaction-seata" target="1.8" />
       <module name="docker-kubernetes" target="15" />
+      <module name="dubbo-rpc" target="15" />
+      <module name="ehcache" target="1.8" />
       <module name="high-concurrency" target="15" />
       <module name="http-web-server" target="15" />
       <module name="io-netty" target="15" />
@@ -53,6 +52,9 @@
       <module name="orm-hibernate" target="15" />
       <module name="redis" target="15" />
       <module name="redis-master" target="15" />
+      <module name="remote-procedure-call" target="1.8" />
+      <module name="rpc-client" target="17" />
+      <module name="rpc-server" target="17" />
       <module name="serverless-framework" target="15" />
     </bytecodeTargetLevel>
   </component>
