@@ -3,14 +3,12 @@
   - Vertical Scaling 提高每个server的capacity
   - Horizontal Scaling 添加更多的服务server到资源池
 
-- Availability
+- Availability -> 不一定高可靠
   可用性指系统在特定时期内保持运行，以执行其所需功能的时间
-  - 如果系统是高可用性的，不一定代表高可靠性
 
-- Reliability
+- Reliability -> 高可靠一定高可靠
   系统的可靠性，保证系统在数据和安全性上是可靠的
   保证系统中的用户数据不会被丢失
-  - 如果系统是高可靠性的，则一定是高可用性的
 
 - Fault-Tolerance
   系统必须具有宽错性，保证不会被挂掉的能力，通过提供副本(replica)来实现
@@ -24,19 +22,13 @@
   搭建LB负载均衡 + Cache多级缓存 + Lock并发同步
   通过搭建高可用的分布式集群来实现高性能和高并发
 
-- Serviceability / Manageability
-  可维护性和可操作性(修复性)
-
 - Security
   添加Permission权限来授权并控制数据的安全访问
   使用限流器(Rate Limiter)限制可疑的高并发请求
   考虑Web Security网络安全相关的问题
 
-- Monitoring
-  监控系统的什么信息，监控系统的日志数据(Log格式)
+- Tracking and monitoring
+  追踪系统的关键数据信息，监控系统健康和性能
 
-- Sustainable 系统的可持续性
-
-- Efficiency 有效性
-
-- Cost 花销成本
+- Serviceability / Manageability
+  可维护性和可操作性(修复性)
