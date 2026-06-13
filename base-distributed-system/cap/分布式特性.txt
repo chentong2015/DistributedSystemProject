@@ -1,5 +1,5 @@
 TODO: 根据CAP理论, 分布式系统最多只能同时满足两个
-Consistency  所有机器上任何时刻的数据都是一样的
+Consistency 所有机器上任何时刻的数据都一致
 Availability 系统随时能够相应, 无需等待
 Partition Tolerance 部分网络断掉, 系统依然正常运行 => 选P
 
