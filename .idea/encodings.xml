@@ -51,6 +51,8 @@
     <file url="file://$PROJECT_DIR$/distributed-id-generatorsssss/3. 号段模式.JPG" charset="GBK" />
     <file url="file://$PROJECT_DIR$/distributed-id-generatorsssss/3. 号段模式架构实现.JPG" charset="GBK" />
     <file url="file://$PROJECT_DIR$/distributed-id-generatorsssss/snowflake_id/MysqlAutoIncrementId.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/distributed-lock/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/distributed-lock/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/distributed-transaction/seata/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/distributed-transaction/seata/src/main/java/aspect" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/distributed-transaction/seata/src/main/java/aspect/DataSourceAspect.java" charset="UTF-8" />
@@ -66,10 +68,10 @@
     <file url="file://$PROJECT_DIR$/distributed-transaction/seata/src/main/java/transactional/GlobalTransactionManager.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/distributed-transaction/seata/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/distributed-transaction/分布式事务框架Seata.txt" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/distributed-zookeeper/src/main/Zookeeper分布式框架.txt" charset="GBK" />
     <file url="file://$PROJECT_DIR$/indexing-elasticsearch/Elasticsearch弹性搜索.txt" charset="GBK" />
     <file url="file://$PROJECT_DIR$/remote-procedure-call/dubbo-rpc/src/main/java/rmi/BaseJavaRMI.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/remote-procedure-call/rpc-server/src/main/java/com/rpc/server/MainServer.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/zookeeper/design/Zookeeper分布式框架.txt" charset="GBK" />
     <file url="file://$PROJECT_DIR$/../JavaMasterApplications/networking-web-services/io-netty/src/main/java/io_network/bio" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../JavaMasterApplications/networking-web-services/io-netty/src/main/java/io_network/nio" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../JavaMasterApplications/networking-web-services/io-netty/src/main/java/io_network/nio_selector/BaseNioServerSelector.java" charset="UTF-8" />

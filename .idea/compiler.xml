@@ -6,14 +6,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="distributed-lock" />
         <module name="dubbo-framework" />
-        <module name="algorithme" />
-        <module name="distributed-zookeeper" />
+        <module name="zookeeper" />
         <module name="distributed-id-generator" />
         <module name="seata" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="algorithme" target="1.8" />
       <module name="api-servlet-core" target="1.8" />
       <module name="architect-system-design" target="15" />
       <module name="big-data-processing-system" target="15" />
@@ -24,6 +25,7 @@
       <module name="container-docker-basic" target="15" />
       <module name="container-serverless-framework" target="15" />
       <module name="container-severless-framework" target="15" />
+      <module name="core-load-balancer" target="17" />
       <module name="database" target="15" />
       <module name="design-caching-problems" target="17" />
       <module name="design-lru-cache" target="17" />

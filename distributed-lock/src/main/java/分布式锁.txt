@@ -1,0 +1,11 @@
+分布式场景下, 多机器部署相同系统
+
+- 单个服务的JVM锁执行锁单个进程，无法跨进程加锁
+  // synchronized (this) { }
+
+- 使用分布式锁能够保证多台机器被同一个锁限制，保证高并发系统执行的准确性
+  // server 1: distributedLock.lock() 拿到锁并执行
+  // server 2: distributedLock.lock() 放弃执行
+
+- 根据操作不同选择不同的分布式读写锁
+  // RReadWriteLock readWriteLock;

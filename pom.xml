@@ -16,9 +16,9 @@
     </properties>
 
     <modules>
-        <module>core-load-balancer</module>
         <module>distributed-id-generator</module>
         <module>distributed-transaction</module>
-        <module>distributed-zookeeper</module>
+        <module>zookeeper</module>
+        <module>distributed-lock</module>
     </modules>
 </project>
