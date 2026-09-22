@@ -1,4 +1,4 @@
-package readwrite_lock;
+package redisson;
 
 import jodd.util.StringUtil;
 import org.redisson.Redisson;

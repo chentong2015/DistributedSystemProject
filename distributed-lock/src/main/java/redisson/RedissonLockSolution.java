@@ -1,4 +1,4 @@
-package distributed_lock;
+package redisson;
 
 import org.redisson.Redisson;
 import org.redisson.api.RLock;
@@ -6,7 +6,7 @@ import org.redisson.config.Config;
 import org.springframework.data.redis.core.StringRedisTemplate;
 
 // Redisson (Redis Java Client): 分布式框架, 提供分布式场景解放方案
-public class DistributedLockRedisson {
+public class RedissonLockSolution {
 
     StringRedisTemplate stringRedisTemplate;
 
