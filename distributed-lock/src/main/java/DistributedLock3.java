@@ -25,7 +25,7 @@ public class DistributedLock3 {
     // 在A请求的业务完全结束时，执行finally语句，把B获得的线程锁给释放掉，然后让C请求来获得锁
     // 接着等B请求执行完，执行finally语句，又释放掉别的线程获得的锁....
     public String testDistributedLockSolution() {
-        // TODO. 为每个锁创建它的ID标识
+        // TODO. 为每个线程创建它的ID标识 => Thread.currentThread().getId()等效
         String threadId = UUID.randomUUID().toString();
         Boolean isGetLocked = stringRedisTemplate.opsForValue().setIfAbsent(key, threadId, 10, TimeUnit.SECONDS);
         if (Boolean.FALSE.equals(isGetLocked)) {
@@ -38,7 +38,7 @@ public class DistributedLock3 {
                 stringRedisTemplate.opsForValue().set("stock", String.valueOf(stock - 1));
             }
         } finally {
-            // TODO: 检测并且只释放自己获取的锁，执行必须是原子执行 !!
+            // TODO: 判断只能释放字节线程获取的锁，执行必须是原子执行 !!
             if (stringRedisTemplate.opsForValue().get(key).equals(threadId)) {
                 // 如果系统在这里卡顿，刚好超过10s，由于之前设置的超时时间，导致锁释放了
                 // 下面操作失效: 通过key来删除，有可能会删除到其他请求刚获取的锁...
