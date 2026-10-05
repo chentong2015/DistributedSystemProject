@@ -1,5 +1,4 @@
 -- TODO. 通过DB系统自增特性生成ID值
-
 -- MySQL 设置数据库自增属性值(偏移量, 间隔)
 CREATE DATABASE seqid;
 set @@auto_increment_offset = 1;

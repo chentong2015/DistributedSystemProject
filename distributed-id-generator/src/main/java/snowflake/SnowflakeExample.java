@@ -24,9 +24,9 @@ public class SnowflakeExample {
     private final static long TIMESTMP_LEFT = DATACENTER_LEFT + DATACENTER_BIT;
 
     // TODO: 每一部分最大值, 只保留低位指定长度bit位值1
-    // -1的二进制为：........ 1111 1111 1111 1111 1111 1111 1111 1111
-    // << 12       ........ 1111 1111 1111 1111 1111 0000 0000 0000
-    // ~           ........ 0000 0000 0000 0000 0000 1111 1111 1111
+    // -1 二进制 ........ 1111 1111 1111 1111 1111 1111 1111 1111
+    // << 12    ........ 1111 1111 1111 1111 1111 0000 0000 0000
+    // ~        ........ 0000 0000 0000 0000 0000 1111 1111 1111
     private final static long MAX_DATACENTER_NUM = ~(-1L << DATACENTER_BIT);
     private final static long MAX_MACHINE_NUM = ~(-1L << MACHINE_BIT);
     private final static long MAX_SEQUENCE = ~(-1L << SEQUENCE_BIT);
